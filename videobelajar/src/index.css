@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-button: #6be26b;
+  --secondary-button: #e2fcd9cc;
+  --tertiary-button: #ffbd3a;
+  --quaternary-button: #ffecb0;
+  --discon-button: #ffd26b;
+  --primary-body: #fff7d7cc;
+  --secondary-body: #ffdf88;
+  --text-dark: #222325;
+  --text-dark-secondary: #4a505c;
+  --text-disable: #3a354161;
+  --text-light: #c1c2c4;
+  --border: #3a35411f;
+  --error: #f64920;
+}
+
+body {
+  background-color: var(--primary-body);
+  font-family: "Poppins", sans-serif;
+}
+
+.clip-half {
+  clip-path: inset(0 50% 0);
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.5px;
+}
