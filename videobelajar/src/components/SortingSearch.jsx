@@ -15,10 +15,10 @@ export default function SortingSearch() {
   ];
 
   return (
-    <div className="flex justify-end items-start md:items-center gap-4 mb-6">
+    <div className="flex justify-between md:justify-end items-start md:items-center gap-4 mb-6">
       <div className="relative text-gray-400">
         <div
-          className="flex items-center justify-between !px-4 !py-2 border border-gray-300 rounded-lg cursor-pointer bg-white min-w-[100px]"
+          className="flex items-center justify-between !px-4 !py-2 border border-gray-300 rounded-lg cursor-pointer bg-white min-w-[100px] md:w-[100px]"
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
         >
           <span className="text-gray-500">{selectedSort}</span>
@@ -52,7 +52,7 @@ export default function SortingSearch() {
         )}
       </div>
 
-      <div className="relative w-1/3">
+      <div className="relative w-full md:w-1/3">
         <input
           type="text"
           placeholder="Cari Kelas"

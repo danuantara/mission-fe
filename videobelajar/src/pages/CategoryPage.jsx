@@ -16,11 +16,11 @@ export default function CategoryPage() {
       <div>
         <Navbar />
       </div>
-      <div className="md:!px-30 !pt-16 !pb-12 !px-5">
-        <h1 className="text-[32px] font-bold text-[var(--text-dark)]">
+      <div className="md:!px-30 !pt-7 md:!pt-16 !pb-12 !px-5">
+        <h1 className="text-2xl md:text-[32px] font-bold text-[var(--text-dark)]">
           Koleksi Video Pembelajaran Unggulan
         </h1>
-        <p className="text-sm text-[var(--text-dark-secondary)]">
+        <p className="text-sm md:text-base text-[var(--text-dark-secondary)]">
           Jelajahi Dunia Pengetahuan Melalui Pilihan Kami!
         </p>
       </div>

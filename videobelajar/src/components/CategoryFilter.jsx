@@ -13,7 +13,7 @@ export default function CategoryFilter() {
   const [isDurasiOpen, setIsDurasiOpen] = useState(false);
 
   return (
-    <div className="md:h-3/6 flex flex-col !p-4 border border-[var(--border)] w-full max-w-[366px] rounded-lg bg-white gap-2.5">
+    <div className="md:h-3/6 flex flex-col !p-4 border border-[var(--border)] w-full md:max-w-[366px] rounded-lg bg-white gap-2.5">
       <div className="flex justify-between items-center mb-6">
         <p className="font-semibold">Filter</p>
         <button className="text-red-400 text-sm font-semibold hover:text-red-500">

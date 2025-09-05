@@ -24,7 +24,7 @@ export default function CourseCard({
         <div className=" flex flex-col gap-4 p-4">
           <h3 className="text-base font-semibold mb-1">{title}</h3>
 
-          <p className="hidden md:flex text-sm font-medium text-gray-500 line-clamp-2">
+          <p className="!hidden md:!block text-sm font-medium text-gray-500 line-clamp-2">
             {description}
           </p>
 
