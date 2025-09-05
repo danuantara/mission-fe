@@ -120,10 +120,13 @@ const courses = [
   },
 ];
 
-export default function CourseList() {
+export default function CourseList({ currentPage, itemsPerPage = 6 }) {
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentCourses = courses.slice(startIndex, endIndex);
   return (
     <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6">
-      {courses.map((course) => (
+      {currentCourses.map((course) => (
         <CouseCard key={course.id} {...course} />
       ))}
     </div>
