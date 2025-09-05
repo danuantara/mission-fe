@@ -12,7 +12,7 @@ const courses = [
     role: "Senior Accountant di ",
     rating: 3.5,
     reviews: 86,
-    price: 300000,
+    price: 300,
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const courses = [
     role: "Senior Accountant di ",
     rating: 4.2,
     reviews: 102,
-    price: 250000,
+    price: 300,
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const courses = [
     role: "Senior Accountant di ",
     rating: 4.8,
     reviews: 200,
-    price: 350000,
+    price: 300,
   },
   {
     id: 4,
@@ -51,7 +51,7 @@ const courses = [
     role: "Senior Accountant di ",
     rating: 3.5,
     reviews: 86,
-    price: 300000,
+    price: 300,
   },
   {
     id: 5,
@@ -64,7 +64,7 @@ const courses = [
     role: "Senior Accountant di ",
     rating: 4.2,
     reviews: 102,
-    price: 250000,
+    price: 300,
   },
   {
     id: 6,
@@ -77,7 +77,7 @@ const courses = [
     role: "Senior Accountant di ",
     rating: 4.8,
     reviews: 200,
-    price: 350000,
+    price: 300,
   },
   {
     id: 7,
@@ -90,7 +90,7 @@ const courses = [
     role: "Senior Accountant di ",
     rating: 3.5,
     reviews: 86,
-    price: 300000,
+    price: 300,
   },
   {
     id: 8,
@@ -103,7 +103,7 @@ const courses = [
     role: "Senior Accountant di ",
     rating: 4.2,
     reviews: 102,
-    price: 250000,
+    price: 300,
   },
   {
     id: 9,
@@ -116,13 +116,13 @@ const courses = [
     role: "Senior Accountant di ",
     rating: 4.8,
     reviews: 200,
-    price: 350000,
+    price: 300,
   },
 ];
 
 export default function CourseList() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6">
       {courses.map((course) => (
         <CouseCard key={course.id} {...course} />
       ))}

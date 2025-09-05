@@ -51,7 +51,7 @@ export default function CourseCard({
       <div className="flex justify-between items-center">
         <StarRating rating={rating} reviews={reviews} />
 
-        <p className="text-2xl font-bold  text-green-600">Rp {price}</p>
+        <p className="text-2xl font-bold  text-green-600">Rp {price} K</p>
       </div>
     </div>
   );
